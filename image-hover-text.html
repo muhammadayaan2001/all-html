@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-container .text-overlay {
+      width: 100%;
+      height: 100%;
+      color: #000000;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .image-container:hover .text-overlay {
+      opacity: 1;
+    }
+
+    /* second example */
+    .div1 .txt1 {
+      color: #000000;
+      display: none;
+    }
+
+    .div1:hover .txt1 {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="images/demo_img_592x822.jpg" alt="Image 1" class="img-fluid">
+          <div class="text-overlay">
+            <p>Text for Image 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="images/demo_img_592x822.jpg" alt="Image 2" class="img-fluid">
+          <div class="text-overlay">
+            <p>Text for Image 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="image-container">
+          <img src="images/demo_img_592x822.jpg" alt="Image 3" class="img-fluid">
+          <div class="text-overlay">
+            <p>Text for Image 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Example -->
+  <h1>Second Example</h1>
+    <div class="col-md-4">
+      <div class="card">
+          <div class="div1">
+              <img src="images/demo_img_592x822.jpg" class="img1" />
+              <p class="txt1">Hello shahwaiz</p>
+          </div>
+    </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
